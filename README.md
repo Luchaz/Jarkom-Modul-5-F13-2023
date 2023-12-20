@@ -73,7 +73,7 @@ Kelompok kami memiliki prefix IP ``10.58``
 ## Rute
 Berikut adalah Rute yang telah kami buat dari hasil [Topologi VLSM](#topologi-vlsm) sebagai berikut 
 
-![image](https://github.com/Caknoooo/Jarkom-Modul-4-F13-2023/assets/92671053/a889600d-b35e-4f3c-8608-68a7a32a1f08)
+![image]()
 
 
 ## Persiapan 
@@ -541,17 +541,17 @@ Disini akan dilakukan testing terhadap ``client`` yang akan menuju ``Revolte`` d
 
 Disini akan digunakan port ``8080`` pada koneksi ``tcp``
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/e986af07-9cda-4b5f-a5d7-335100079954)
+![image]()
 
 **Gagal** 
 
 Karena port ``8080`` pada UDP juga tidak di blok, jadi tidak akan saling terkoneksi
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/fc7c8068-211b-4d84-9105-b741c1b39cc6)
+![image]()
 
 port yang lain (yang di blok) -> contoh port ``3000`` dengan tcp
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/96eaedd9-bf5a-496d-b25c-5124f6deabb2)
+![image]()
 
 ## Soal 3
 > Kepala Suku North Area meminta kalian untuk membatasi DHCP dan DNS Server hanya dapat dilakukan ping oleh maksimal 3 device secara bersamaan, selebihnya akan di drop.
@@ -582,7 +582,7 @@ Jadi, aturan ini akan menolak paket ICMP jika jumlah koneksi ICMP dari satu alam
 
 ### Testing
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/e9f421d8-6fc2-437a-a8c6-dcf4babed9c9)
+![image]()
 
 Pada ``GrobeForest`` tidak berhasil melakukan ``ping`` karena ``Revolte`` sudah mencapat 3 koneksi.
 
@@ -613,11 +613,11 @@ Disini kami akan melakukan ``testing`` dimana kami akan menggunakan ``GrobeFores
 
 **GrobeForest**
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/354beb06-285b-4f9d-bc10-c8200c03925f)
+![image]()
 
 **TurkRegion**
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/6b3027a3-18ef-4bc5-ae5c-5ebed92d539c)
+![image]()
 
 ## Soal 5
 > Selain itu, akses menuju WebServer hanya diperbolehkan saat jam kerja yaitu Senin-Jumat pada pukul 08.00-16.00.
@@ -649,11 +649,11 @@ Disini kami akan melakukan testing `Sukses` dan `Gagal`
 
 **Sukses**
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/73de3c3e-0b28-4c54-b616-7c38abdec8a8)
+![image]()
 
 **Gagal**
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/f6a11ad2-228b-494c-a66e-c826440e1d0e)
+![image]()
 
 ## Soal 6
 > Lalu, karena ternyata terdapat beberapa waktu di mana network administrator dari WebServer tidak bisa stand by, sehingga perlu ditambahkan rule bahwa akses pada hari Senin - Kamis pada jam 12.00 - 13.00 dilarang (istirahat maksi cuy) dan akses di hari Jumat pada jam 11.00 - 13.00 juga dilarang (maklum, Jumatan rek).
@@ -683,11 +683,11 @@ Pada testing kali ini kami akan mencoba untuk melakukan pada waktu yang telah di
 
 **Sukses**
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/41d20fa3-486b-4463-bb15-55d6c950db0c)
+![image]()
 
 **Gagal**
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/1d1063f3-7a21-4b57-96e1-f37525a2c69d)
+![image]()
  
 ## Soal 7
 > Karena terdapat 2 WebServer, kalian diminta agar setiap client yang mengakses Sein dengan Port 80 akan didistribusikan secara bergantian pada Sein dan Stark secara berurutan dan request dari client yang mengakses Stark dengan port 443 akan didistribusikan secara bergantian pada Sein dan Stark secara berurutan.
@@ -754,7 +754,7 @@ curl 10.58.4.2:80
 curl 10.58.1.118:443
 ```
 
-![image](https://github.com/Caknoooo/Jarkom-Modul-5-F13-2023/assets/92671053/a9d2e625-84c9-4ab5-864a-9f5a282edfc4)
+![image]()
 
 ## Soal 8
 > Karena berbeda koalisi politik, maka subnet dengan masyarakat yang berada pada Revolte dilarang keras mengakses WebServer hingga masa pencoblosan pemilu kepala suku 2024 berakhir. Masa pemilu (hingga pemungutan dan penghitungan suara selesai) kepala suku bersamaan dengan masa pemilu Presiden dan Wakil Presiden Indonesia 2024
@@ -777,15 +777,15 @@ iptables -A INPUT -p tcp --dport 80 -s 10.58.1.104/30 -m time --datestart 2023-1
 ### Testing
 testing dengan menggunakan ``client``
 
-![image](https://github.com/Caknoooo/Jarkom-Modul-5-F13-2023/assets/92671053/259b6c8a-a1cb-4c8a-aee1-d1ac3832c015)
+![image]()
 
 testing dengan menggunakan ``revolte`` dimana sudah diakukan pemblokan
 
-![image](https://github.com/Caknoooo/Jarkom-Modul-5-F13-2023/assets/92671053/6c0cfc43-12b2-40ca-b970-b792dae8f8b7)
+![image]()
 
 testing dengan menggunkan ``revote`` tetapi di waktu yang diizinkan
 
-![image](https://github.com/Caknoooo/Jarkom-Modul-5-F13-2023/assets/92671053/14a9eb76-14a3-4bb9-9b19-85aa97ea4447)
+![image]()
 
 ## Soal 9
 > Sadar akan adanya potensial saling serang antar kubu politik, maka WebServer harus dapat secara otomatis memblokir  alamat IP yang melakukan scanning port dalam jumlah banyak (maksimal 20 scan port) di dalam selang waktu 10 menit. (clue: test dengan nmap)
@@ -844,7 +844,7 @@ iptables -A FORWARD -m recent --name portscan --set -j ACCEPT
 ### Testing
 Untuk melakukan testing, kami menggunakan ``ping`` terhadap ``Web Server`` yaitu ``Sein`` 
 
-![image](https://github.com/Caknoooo/information-security-be/assets/92671053/5f2f77a5-5d50-4e2b-ae7f-7ebdf1693a67)
+![image]()
 
 Disaat ``packet`` yang telah terkirim lebih dari 20, maka ``packet`` selanjutnya akan langsung di ``drop``.
 
