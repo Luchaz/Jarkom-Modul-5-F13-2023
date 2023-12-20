@@ -63,7 +63,7 @@ Disini kami dari kelompok **F13** akan membuat laporan resmi pada Praktikum Jark
 
 ## Topologi GNS3
 
-![image]()
+![image](images/Topologi.png)
 
 ## Prefix IP
 
