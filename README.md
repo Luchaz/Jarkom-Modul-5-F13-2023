@@ -4,8 +4,8 @@
 ## Author
 | Nama | NRP |
 |-------------------|------------|
-|M. Naufal Fawwaz R.| 5025211223|
-|Helmi Abiyu M. | 5025211061|
+|Muhammad Naufal Fawwaz Ramadhan| 5025211223|
+|Helmi Abiyu Mahendra | 5025211061|
 
 # Laporan Resmi
 Disini kami dari kelompok **F13** akan membuat laporan resmi pada Praktikum Jarkom Modul 5.
